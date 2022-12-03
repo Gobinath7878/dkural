@@ -17,7 +17,7 @@ cards.setAttribute("id","cards");
 function srcProducts(){
 
     let num = document.getElementById("text").value 
-    if(num<1331,num>0){
+    if(num<1331){
     fetch(`https://api-thirukkural.vercel.app/api?num=${num}`)
     .then((response) => response.json())
     .then((data) => {
